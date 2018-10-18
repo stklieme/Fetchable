@@ -40,7 +40,7 @@ extension Fetchable where Self : NSManagedObject, AttributeName.RawValue == Stri
     /// Returns the entity name for the current class.
     
     static var entityName : String {
-        return NSStringFromClass(self).components(separatedBy: ".").last!
+        return String(describing:self)
     }
     
     
